@@ -19,7 +19,9 @@ float16 average_power_10sec     # [Watt]        Average power consumption over t
 float16 remaining_capacity_wh   # [Watt hours]  Will be increasing during charging
 float16 full_charge_capacity_wh # [Watt hours]  Predicted battery capacity when it is fully charged. Falls with aging
 float16 hours_to_full_charge    # [Hours]       Charging is expected to complete in this time; zero if not charging
-
+float16 run_time_to_empty       # [minutes]	Battery run time to empty
+float16 voltage_cell_v          # [Volt]        Volt of per cell
+uint32  cell_count		# [S]		The number of battery nodes
 #
 # Status flags.
 # Notes:
